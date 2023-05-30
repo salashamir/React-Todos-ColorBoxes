@@ -1,12 +1,11 @@
-import React from "react";
 import { render } from "@testing-library/react";
-import App from "./App";
+import Todo from "./Todo";
 
 test("renders app w/o crashing", () => {
-  render(<App />);
+  render(<Todo />);
 });
 
 test("matches snapshot", () => {
-  const { asFragment } = render(<App />);
+  const { asFragment } = render(<Todo />);
   expect(asFragment()).toMatchSnapshot();
 });
